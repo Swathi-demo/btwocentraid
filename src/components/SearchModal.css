@@ -1,0 +1,57 @@
+/* src/components/SearchModal.css */
+.search-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.search-modal-content {
+    background-color: #1e1e2f;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 22px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.search-modal-input {
+    width: 98%;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.search-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: #ccc;
+}
+
+.search-tags span {
+    cursor: pointer;
+    background-color: #444;
+    padding: 5px 10px;
+    border-radius: 4px;
+}

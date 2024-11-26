@@ -1,0 +1,83 @@
+/* OurCompany.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.our-company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    background-color: #0A1F44;
+  }
+
+  .content-wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
+    padding: 20px;
+    width: 100%;
+    background-image: url('https://images.pexels.com/photos/1181304/pexels-photo-1181304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    margin-bottom: 20px;
+   
+  }
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #e0f7fa;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #00e676; /* Green color for subtitle */
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #d1d1d1;
+}
+
+/* Full background image div */
+#about-company1{
+  position: relative;
+  width: 600px;  /* You can adjust the size as needed */
+  height: 400px; /* You can adjust the size as needed */
+  margin: 100px auto; /* Center the background div horizontally */
+  background-image: url('https://images.pexels.com/photos/7550581/pexels-photo-7550581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  margin-left: 6%;
+  margin-top: 2%;
+}
+
+#small-company1 {
+  position: absolute;
+  top: 50%;    /* Position vertically at the middle of the background div */
+  left: 100%;  /* Position horizontally at the right edge of the background div */
+  transform: translate(-50%, -50%); /* Adjust position to be half inside and half outside */
+  width: 350px;
+  height: 202px;
+  margin-left: 10%;
+  background-color: floralwhite;
+}
+
+#small-company1 p{
+  color: cornflowerblue;
+}
+  
+
+  
+  
+  

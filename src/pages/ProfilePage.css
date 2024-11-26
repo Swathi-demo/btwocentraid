@@ -1,0 +1,92 @@
+/* ProfilePage.css */
+
+.profile-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f4f8; /* Fallback background color */
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-page{
+    background-color: #0A1F44
+}
+
+.profile-container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: transparent; /* Transparent background to show the video */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    position: relative;
+    overflow: hidden; /* Ensures video stays within container bounds */
+    z-index: 1; /* Content should appear above the video */
+    margin-bottom: 18% !important;
+}
+/* Video background */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Places the video behind the profile content */
+    overflow: hidden;
+}
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video fills the container */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.profile-container h1 {
+    font-size: 24px;
+    color: #003366; /* Navy blue */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-container p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333; /* Dark text */
+}
+
+.profile-container p strong {
+    color: #0056b3; /* Accent color */
+}
+
+.profile-container .user-roles {
+    font-style: italic;
+    color: #666; /* Grey for roles */
+}
+
+.profile-container p:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.profile-content {
+    position: relative;
+    z-index: 1; /* Ensures content appears above the video */
+    padding: 20px;
+  /*  background: rgba(255, 255, 255, 0.8);  Semi-transparent background */
+    border-radius: 10px;
+    color: #333; /* Text color */
+    text-align: center;
+}
+
+.profile-content h1 {
+    margin-bottom: 20px;
+    color: #003366; /* Accent color */
+}
+
+.profile-content p {
+    margin: 10px 0;
+    font-size: 16px;
+}

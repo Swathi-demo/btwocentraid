@@ -1,0 +1,220 @@
+/* Navbar.css */
+
+body {
+    font-family: noto sans    ; /* Apply the font to the entire body */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8; /* Light background for contrast */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: #0a1f44;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.navbar-brand a {
+    color: #00d9ff;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+    color: #00d9ff;
+    font-weight: 600;
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.navbar-menu li {
+    position: relative; /* Ensures the dropdown menu is positioned relative to the parent item */
+}
+
+.search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #0e1525;
+    border-radius: 50%;
+    border: 2px solid #77819b;
+    cursor: pointer;
+}
+
+.compare-btn {
+    padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #fff;
+            background: linear-gradient(90deg, #00a9ff, #00e0b1); /* Gradient background */
+            border: none;
+            border-radius: 10px; /* Rounded corners */
+            cursor: pointer;
+            transition: transform 0.2s ease;
+}
+
+.compare-btn:hover {
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+.dropdown:hover .dropdown-menu {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown-menu {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    top: 100%;
+    left: -10px; /* Adjust this to shift the dropdown slightly left */
+    background-color: #14213d;
+    padding: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    min-width: 180px;
+    z-index: 1000;
+    list-style-type: none;
+}
+
+.dropdown-menu li {
+    padding: 8px 20px;
+    white-space: nowrap;
+}
+
+.dropdown-menu li:hover {
+    background-color: #1d3557;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #14213d;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1d2a48;
+}
+
+.search-bar button {
+    padding: 8px 16px;
+    background-color: #00a9ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* src/pages/SearchResults.css */
+.search-results {
+    padding: 20px;
+    color: #ffffff;
+    background-color: #0a1f44;
+}
+
+.search-results h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.no-results {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.result-item {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #33425b;
+}
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between elements */
+  }
+  
+  .welcome-message {
+    font-size: 1.2rem; /* Slightly larger text */
+    font-weight: bold;
+    color: #fff; /* White text */
+  }
+  
+  .profile-button,
+  .logout-button,
+  .signin-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff; /* White text */
+    background-color: #0078d4; /* Blue button background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .profile-button:hover,
+  .logout-button:hover,
+  .signin-button:hover {
+    background-color: #005a9e; /* Darker blue on hover */
+  }
+  
+  .profile-button:active,
+  .logout-button:active,
+  .signin-button:active {
+    background-color: #003a6d; /* Even darker blue on click */
+  }
+  
+
+  .btwoc,.entraid{
+    padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff; /* White text */
+  background-color: #0078d4; /* Blue button background */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  }

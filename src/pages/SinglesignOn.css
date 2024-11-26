@@ -1,0 +1,55 @@
+.main-singlesignon{
+  background-color: #0d1b2a; 
+}
+.single-sign-on-section {
+    display: flex;
+    align-items: center;
+    background-color: #0d1b2a; /* Adjust to match your theme */
+    padding: 40px; /* Increased padding for a similar look */
+    color: #ffffff;
+  }
+  
+  .content {
+    flex: 1;
+    margin-right: 20px; /* Space between content and video */
+  }
+  
+  .content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .content p {
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px; /* Adds space between buttons */
+  }
+  
+  .buttons button {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .buttons button:hover {
+    background-color: #ffffff;
+    color: #0d1b2a;
+  }
+  
+  .video-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .video-container video {
+    width: 100%;
+    max-width: 300px; /* Adjust width as needed */
+    border-radius: 10px;
+  }
+  
